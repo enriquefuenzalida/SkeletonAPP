@@ -1,21 +1,25 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Iniciar Sesión</ion-title>
+    <ion-title>Registro de usuario</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <ion-item>
+    <ion-label position="floating">Nombre</ion-label>
+    <ion-input type="text" [(ngModel)]="nombre"></ion-input>
+  </ion-item>
+  <ion-item>
     <ion-label position="floating">Correo Electrónico</ion-label>
     <ion-input type="email" [(ngModel)]="email"></ion-input>
   </ion-item>
   <ion-item>
-    <ion-label position="floating">Constraseña</ion-label>
+    <ion-label position="floating">Contraseña</ion-label>
     <ion-input type="password" [(ngModel)]="password"></ion-input>
   </ion-item>
 
-  <ion-button expland="full" (click)="login()">Inciar sesión</ion-button>
+  <ion-button expland="full" (click)="registro()">Registrarse</ion-button>
   <div class="alosbuenosbotones">
-    ¿No tienes cuenta? <a routerlink="/registro">Regístrate aquí</a>
+    ¿No tienes cuenta? <a routerlink="/login">Iniciar sesión</a>
   </div>
 </ion-content>
